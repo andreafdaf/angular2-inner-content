@@ -10,7 +10,7 @@ import {
 
 /**
 
-  This component render an HTML code with inner directives on it.
+  This component renders an HTML code with inner directives on it.
   The @Input innerContent receives an array argument, the first array element
   is the code to be parsed. The second index is an array of Components that
   contains the directives present in the code.
