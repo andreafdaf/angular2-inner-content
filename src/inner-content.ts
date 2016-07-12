@@ -44,12 +44,12 @@ export class InnerContent {
 	}
 
 	public renderTemplate(template, directives) {
-		let dynComponent = this.toComponent(template, directives)
+		const dynComponent = this.toComponent(template, directives)
 		this.resolver.resolveComponent(
 			dynComponent
 		).then(factory => {
-			let component = factory.create(
-				this.injector, null, this.elementRef._element.nativeElement
+			const component = factory.create(
+				this.injector, null, this.elementRef.element.nativeElement
 			);
 
 			(<any>this.app)._loadComponent(component);
