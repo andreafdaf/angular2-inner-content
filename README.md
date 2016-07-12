@@ -9,7 +9,9 @@ contains the directives present in the code.
 
 Example:
 
+```
 <div [innerContent]="[
 	'Go to <a [routerLink]="[Home]">Home page</a>',
 	[RouterLink]
 ]">
+```
